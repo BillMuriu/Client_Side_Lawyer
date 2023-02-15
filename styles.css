@@ -1,5 +1,7 @@
-/* ROOT VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 
+
+/* ROOT VARIABLES */
 :root {
     --color-primary: #f00;
     --color-danger: #f00;
@@ -10,9 +12,9 @@
     --color-info-light: #fff;
     --color-dark: #000;
     --color-light: #fff;
-    --color-primary-variant: #f00;
+    --color-primary-variant: #5A3325;
     --color-dark-variant: #000;
-    --color-background: #fff;
+    --color-background: #F4E6CC;
 
 
     --card-border-radius: 0.5rem;
@@ -25,4 +27,30 @@
     --padding-1: 0.5rem;
 
     --box-shadow-1: 0 2rem 3rem var(--color-light);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    background-color: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
 }
