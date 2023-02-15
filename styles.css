@@ -1,0 +1,28 @@
+/* ROOT VARIABLES */
+
+:root {
+    --color-primary: #f00;
+    --color-danger: #f00;
+    --color-success: #0f0; 
+    --color-warning: #ff0;
+    --color-white: #fff;
+    --color-info-dark: #000;
+    --color-info-light: #fff;
+    --color-dark: #000;
+    --color-light: #fff;
+    --color-primary-variant: #f00;
+    --color-dark-variant: #000;
+    --color-background: #fff;
+
+
+    --card-border-radius: 0.5rem;
+    --boder-radius-1: 0.25rem;
+    --boder-radius-2: 0.5rem;
+    --boder-radius-3: 0.75rem;
+
+
+    --card-padding: 1rem;
+    --padding-1: 0.5rem;
+
+    --box-shadow-1: 0 2rem 3rem var(--color-light);
+}
