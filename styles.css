@@ -250,7 +250,7 @@ aside .sidebar .message-count {
 
 
 .side-menu.active ~ .main-content {
-    left: 250px;
+    left: 50px;
     width: calc(100% - 250px);
 }
 
