@@ -55,13 +55,21 @@ body {
     overflow-x: hidden;
 }
 
-a {
-    color: var(--color-dark);
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
 }
 
-/* a:hover {
-    color: var(--color-primary);
-} */
+a {
+    color: var(--color-background);
+}
+
+a:hover {
+    color: var(--color-white);
+}
 
 img {
     display: block;
@@ -79,7 +87,7 @@ h2 {
 }
 
 h3 {
-    font-size: 0.87rem;
+    font-size: 1.0rem;
 }
 
 h4 {
@@ -127,4 +135,70 @@ b {
 
 .warning {
     color: var(--color-warning);
+}
+
+aside {
+    height: 100vh;
+    background-color: var(--color-primary-variant);
+}
+
+aside .top {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-left: 1.4rem;
+}
+
+
+aside .logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* SIDE BAR */
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+a h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    gap: 1.4rem;
+    position: relative;
+    height: 3.7rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
 }
