@@ -190,8 +190,13 @@ aside .sidebar a {
     position: relative;
     height: 3.7rem;
     padding: 0.8rem 1.4rem;
-    border-radius: 0.5rem;
+    /* border radius for left top and bottom only */
+    border-radius: 0.5rem 0 0 0.5rem;
     transition: all 0.2s ease-in-out;
+}
+
+aside .sidebar a:hover {
+    margin-left: 2.5rem;
 }
 
 aside .sidebar a span {
