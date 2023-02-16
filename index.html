@@ -13,7 +13,7 @@
 
     <!-- THE SIDE BAR -->
     <div class="container">
-        <aside class="hidden">
+        <aside class="side-menu">
             <div class="top">
                 <div class="logo">
                     <img src="images/logo.png" alt="logo">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="sidebar">
-                <a href="#" class="active">
+                <a href="#">
                     <span class="material-icons-sharp">dashboard</span>
                     <h3>Dashboard</h3>
                 </a>
@@ -51,7 +51,7 @@
 
 
         <!-- THE MAIN CONTENT -->
-        <main>
+        <main class="main-content">
             <div class="topbar">
               <div class="topbar__messages">
                 <span class="material-icons-sharp">mail_outline</span>
@@ -65,10 +65,14 @@
         </main>
           
     </div>
-
-    <script src="scripts.js"></script>
-
-
-
 </body>
+
+<script>
+    const menuBtn = document.getElementById('close-btn');
+    const sidebar = document.querySelector('.side-menu');
+
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    })
+</script>
 </html>

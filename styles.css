@@ -227,12 +227,13 @@ aside .sidebar a:last-child {
     width: 100%;
 }
 
-aside .sidebar a.active {
+
+/* aside .sidebar a.active {
     background: var(--color-background);
     color: var(--color-dark);
     border-radius: none;
     margin-left: 3rem;
-}
+} */
 
 aside .sidebar a.active span {
     color: var(--color-dark);
@@ -247,6 +248,15 @@ aside .sidebar .message-count {
     border-radius: 10px;
 }
 
+
+.side-menu.active ~ .main-content {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.side-menu.active {
+    width: 250px;
+}
 /* end of sidebar */
 
 
