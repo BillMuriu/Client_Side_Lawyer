@@ -140,6 +140,7 @@ b {
 aside {
     height: 100vh;
     background-color: var(--color-primary-variant);
+    border-radius: 0.5rem;
 }
 
 aside .top {
@@ -201,4 +202,11 @@ aside .sidebar a:last-child {
     position: absolute;
     bottom: 2rem;
     width: 100%;
+}
+
+aside .sidebar a:active {
+    background: var(--color-background);
+    color: var(--color-dark);
+    border-radius: none;
+    margin-left: 3rem;
 }
