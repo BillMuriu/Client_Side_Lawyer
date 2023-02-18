@@ -4,12 +4,6 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.user-img {
-    width: 50px;
-    border-radius: 100%;
-    border: 1px solid #eee;
-}
-
 
 .sidebar {
     position: relative;
@@ -20,7 +14,7 @@
     width: 80px;
     background: #12171e;
     padding: 0.4rem 0.8rem;
-    border-radius: .6rem;
+    border-radius: 0 0.6rem 0.6rem 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
 }
@@ -73,40 +67,8 @@
     margin-right: 5px;
 }
 
-.user-wrapper {
-    position: relative;
-}
-
-.user {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    cursor: pointer;
-}
-
-
-.user p {
-    color: #fff;
-    opacity: 1;
-    margin-left: 1rem;
-}
-
-
-.bold {
-    font-weight: 600;
-}
-
-
-.sidebar p {
-    opacity: 0;
-}
-
-.sidebar.active p {
-    opacity: 1;
-}
-
-.sidebar.active .user img {
-    margin-left: 1.5rem;
+.top .logo span {
+    margin-left: 8px;
 }
 
 .sidebar .ul-wrapper {
