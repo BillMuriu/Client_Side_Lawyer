@@ -46,11 +46,16 @@
     left: 90%;
 }
 
+.sidebar .top .logo-wrapper {
+    position: relative;
+}
+
 .sidebar .top .logo {
     color: #fff;
     display: flex;
     align-items: center;
     height: 50px;
+    margin-left: 1.5rem;
     width: 100%;
     pointer-events: none;
     opacity: 0;
@@ -65,10 +70,16 @@
     margin-right: 5px;
 }
 
+.user-wrapper {
+    position: relative;
+}
+
 .user {
     display: flex;
     align-items: center;
     margin: 1rem 0;
+    cursor: pointer;
+    margin-left: 1.5rem;
 }
 
 .user p {
