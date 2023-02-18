@@ -79,14 +79,15 @@
     align-items: center;
     margin: 1rem 0;
     cursor: pointer;
-    margin-left: 1.5rem;
 }
+
 
 .user p {
     color: #fff;
     opacity: 1;
     margin-left: 1rem;
 }
+
 
 .bold {
     font-weight: 600;
@@ -98,6 +99,10 @@
 
 .sidebar.active p {
     opacity: 1;
+}
+
+.sidebar.active .user img {
+    margin-left: 1.5rem;
 }
 
 .sidebar ul li {
