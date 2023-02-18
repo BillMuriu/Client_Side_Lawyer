@@ -182,72 +182,55 @@
     position: sticky;
     top: 0;
     width: 100%;
-    background: #fff;
-    color: #12171e;
-}
-
-.main-content .container .top_bar .top_bar_wrapper {
+    height: 50px;
+    background:rgba(0, 0, 0, 0.5);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-                        /* <div class="top_bar_left">
-                            <h1>Dashboard</h1>
-                        </div>
-                        <div class="top_bar_right">
-                            <div class="search">
-                                <input type="text" placeholder="Search">
-                                <i class="bx bx-search"></i>
-                            </div>
-                            <div class="user">
-                                <img src="brain.jpg" alt="" class="user-img">
-                                <div>
-                                    <p class="bold">Clint</p>
-                                    <p>Admin</p>
-                                </div>
-                            </div>
-                        </div> */
 
-.main-content .container .top_bar .top_bar_wrapper .top_bar_left {
+/* <div class="top_bar_left">
+    <h1>Dashboard</h1>
+</div>
+<div class="top_bar_right">
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <i class="bx bx-search"></i>
+    </div>
+    <div class="user">
+        <img src="brain.jpg" alt="" class="user-img">
+        <div>
+            <p class="bold">Clint</p>
+            <p>Admin</p>
+        </div>
+    </div>
+</div> */
+
+.main-content .container .top_bar_left {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    margin-left: 1rem;
 }
 
-.main-content .container .top_bar .top_bar_wrapper .top_bar_left h1 {
-    font-size: 1.5rem;
+.main-content .container .top_bar_left h1 {
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
-.main-content .container .top_bar .top_bar_wrapper .top_bar_right {
+.main-content .container .top_bar_right {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    margin-right: 1rem;
 }
 
-.main-content .container .top_bar .top_bar_wrapper .top_bar_right .search {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    height: 40px;
-    background: #eee;
-    border-radius: 0.8rem;
-    padding: 0 1rem;
-}
 
-.main-content .container .top_bar .top_bar_wrapper .top_bar_right .search input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #12171e;
-}
+
+
+
+
+
 
 .main-content .container .the_content {
     width: 100%;
