@@ -225,6 +225,41 @@
     margin-right: 1rem;
 }
 
+.main-content .container .top_bar_right .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.main-content .container .top_bar_right .search input {
+    height: 30px;
+    width: 200px;
+    border-radius: 0.8rem;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+}
+
+.main-content .container .top_bar_right .search i {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.main-content .container .top_bar_right .user {
+    display: flex;
+    align-items: center;
+}
+
+.main-content .container .top_bar_right .user .user-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
 
 
 
