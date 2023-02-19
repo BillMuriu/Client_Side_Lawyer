@@ -152,6 +152,7 @@ body {
     top: 0;
     width: 100%;
     height: 50px;
+    margin-bottom: auto;
     background: #FFFBEB;
     color: black;
     display: flex;
@@ -226,9 +227,9 @@ body {
 
 .main-content .container .the_content {
     width: 100%;
+    margin-top: 0rem;
     background: #FFFBEB;
-    /* padding top and bottom 2rem padding left 3rem padding right 4rem */
-    padding: 2rem 4rem 2rem 2rem;
+    padding: 0rem 4rem 0rem 2rem;
     height: 100vh;
 }
 
@@ -237,6 +238,11 @@ body {
     height: 100%;
     background: #fff;
     padding: 1rem;
-    margin: 2rem 0;
+    margin-top: 0.5rem;
     border-radius: 1.2rem;
 }
+
+
+/* =================The input form=================== */
+
+
