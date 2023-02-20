@@ -216,7 +216,6 @@
                                     <label for="check-other">prefer not to say</label>
                                   </div>
                                 </div> -->
-                              </div>
                               <div class="input-box address">
                                 <label>Address</label>
                                 <input type="text" placeholder="Enter street address" required />
@@ -269,5 +268,29 @@
         side_bar.style.position = 'relative';
     }
     });
+
+
+    const selectBtn = document.querySelector(".select-btn"),
+      items = document.querySelectorAll(".item");
+
+    selectBtn.addEventListener("click", () => {
+        selectBtn.classList.toggle("open");
+    });
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("checked");
+
+            let checked = document.querySelectorAll(".checked"),
+                btnText = document.querySelector(".btn-text");
+
+                if(checked && checked.length > 0){
+                    btnText.innerText = `${checked.length} Selected`;
+                }else{
+                    btnText.innerText = "Select Language";
+                }
+        });
+    })
+
 </script>
 </html>
