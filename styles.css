@@ -334,8 +334,8 @@ body {
   .select-box-1 select {
     height: 100%;
     width: 50%;
-    /* outline: none; */
-    border: 1px solid #ddd;
+    outline: none;
+    border: none;
     color: #707070;
     font-size: 1rem;
   }
