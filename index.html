@@ -222,5 +222,19 @@
         side_bar.style.position = 'relative';
     }
     });
+
+    const top_bar = document.querySelector('.top_bar');
+    const topbarTop = top_bar.offsetTop;
+
+    window.addEventListener('scroll', () => {
+    if (window.pageYOffset >= topbarTop) {
+        top_bar.style.position = 'fixed';
+        top_bar.style.top = 0;
+    } else {
+        top_bar.style.position = 'sticky';
+        top_bar.style.top = null;
+    }
+    });
+
 </script>
 </html>
