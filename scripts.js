@@ -35,26 +35,31 @@
     }
     });
 
-    
 
-    const selectBtn = document.querySelector(".select-btn"),
-      items = document.querySelectorAll(".item");
 
-    selectBtn.addEventListener("click", () => {
-        selectBtn.classList.toggle("open");
+    const selectBtns = document.querySelectorAll('.select-btn');
+
+    selectBtns.forEach(selectBtn => {
+    selectBtn.addEventListener('click', () => {
+        selectBtn.classList.toggle('open');
     });
 
+    const items = selectBtn.parentNode.querySelector('.list-items').querySelectorAll('.item');
+
     items.forEach(item => {
-        item.addEventListener("click", () => {
-            item.classList.toggle("checked");
+        item.addEventListener('click', () => {
+        item.classList.toggle('checked');
 
-            let checked = document.querySelectorAll(".checked"),
-                btnText = document.querySelector(".btn-text");
+        let checked = selectBtn.parentNode.querySelector('.list-items').querySelectorAll('.checked'),
+            btnText = selectBtn.querySelector('.btn-text');
 
-                if(checked && checked.length > 0){
-                    btnText.innerText = `${checked.length} Selected`;
-                }else{
-                    btnText.innerText = "Select Language";
-                }
+        if (checked && checked.length > 0) {
+            btnText.innerText = `${checked.length} Selected`;
+        } else {
+            btnText.innerText = 'Select Language';
+        }
         });
-    })
+    });
+    });
+
+    
