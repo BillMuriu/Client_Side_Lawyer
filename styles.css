@@ -125,6 +125,42 @@ body {
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
     }
+
+    .sidebar_links ul li:last-child {
+        margin-top: auto;
+    }
+
+    .side_bar .sidebar_links ul li:hover {
+        background-color: #e1e1e1;
+    }
+
+    .side_bar .sidebar_links ul li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+
+    .side_bar .sidebar_links ul li a span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    
+    .side_bar .sidebar_links .link-text {
+        font-size: 16px;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+
+    .side_bar .sidebar_links a #count {
+        padding-left: 10px;
+    }
+
+
   .side_bar .sidebar_links a span {
     font-family: 'Material Icons';
   }
