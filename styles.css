@@ -6,6 +6,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     margin: 0;
+    overflow: auto;
 }
 
 .top_bar {
@@ -80,9 +81,12 @@ body {
     flex: 1;
     background-color: #641212;
     height: 200vh;
+    overflow: auto; /* add this line to allow scrolling by default */
     transition: filter 0.3s ease-in-out;
   }
   
+
   .content.blur {
-  filter: blur(5px);
-}
+    filter: blur(2px); /* add this to apply a blur effect */
+    overflow: hidden; /* add this to prevent scrolling */
+  }
