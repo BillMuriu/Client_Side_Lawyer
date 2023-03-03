@@ -160,6 +160,10 @@ body {
         padding-left: 10px;
     }
 
+    .side_bar .sidebar_links #last {
+        padding-top: 300px;
+    }
+
 
   .side_bar .sidebar_links a span {
     font-family: 'Material Icons';
