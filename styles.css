@@ -107,6 +107,24 @@ body {
   }
 
 
+
+    .side_bar .sidebar_links ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .side_bar .sidebar_links ul li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #e1e1e1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
   .side_bar .sidebar_links a span {
     font-family: 'Material Icons';
   }
