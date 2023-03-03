@@ -25,7 +25,7 @@ body {
   
 
   .sidebar_trigger {
-    background-color: #fff;
+    background-color: #333333;
     color: #ffffff;
     cursor: pointer;
     font-size: 20px;
@@ -41,7 +41,7 @@ body {
     width: 50px;
     line-height: 50px;
     text-align: center;
-    color: #333333;
+    color: #fff;
   }
 
   #menu_closed {
@@ -69,14 +69,6 @@ body {
     z-index: 1;
   }
 
-  .side_bar .profile_name {
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #333333;
-  }
-
-
   .content {
     flex: 1;
     background-color: #641212;
@@ -89,4 +81,32 @@ body {
   .content.blur {
     filter: blur(2px); /* add this to apply a blur effect */
     overflow: hidden; /* add this to prevent scrolling */
+  }
+
+  .side_bar .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 75px;
+  }
+
+  
+  .side_bar .profile_image img {
+    background-color: #333333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .side_bar .profile_name {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+  }
+
+
+  .side_bar .sidebar_links a span {
+    font-family: 'Material Icons';
   }
