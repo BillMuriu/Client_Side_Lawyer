@@ -40,7 +40,7 @@ body {
     line-height: 50px;
     text-align: center;
     color: white;
-    transition: background-color 0.3s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
 
   #menu_closed {
@@ -162,7 +162,7 @@ body {
     .side_bar .sidebar_links .link-text {
         font-size: 18px;
         font-weight: 700;
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .side_bar .sidebar_links a #count {
