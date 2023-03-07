@@ -1,0 +1,175 @@
+body {
+    background-color: #FFFBEB;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+    overflow: auto;
+}
+
+.top_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111827;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1
+  }
+  
+
+  .sidebar_trigger {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: -12px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .sidebar_trigger span {
+    font-family: 'Material Icons';
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    transition: transform 1s ease-in-out;
+  }
+
+  #menu_closed {
+    display: none;
+  }
+
+
+  .bottom_section {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .side_bar {
+    background-color: #FFFBEB;
+    height: calc(100vh - 50px);
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    left: -200px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .content {
+    flex: 1;
+    background-color: #ffffff;
+    color: aqua;
+    margin: 10px;
+    height: 200vh;
+    overflow: auto; /* add this line to allow scrolling by default */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+
+  .content.blur {
+    filter: blur(2px); /* add this to apply a blur effect */
+    overflow: hidden; /* add this to prevent scrolling */
+  }
+
+  .side_bar .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBEB;
+    height: 75px;
+    border-bottom: 1px solid #78350F;
+
+  }
+
+  
+  .side_bar .profile_image img {
+    background-color: #333333;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .side_bar .profile_name {
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+  }
+
+
+
+    .side_bar .sidebar_links ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    .side_bar .sidebar_links ul li {
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .sidebar_links ul li:last-child {
+        margin-top: auto;
+    }
+
+    .side_bar .sidebar_links ul li:hover{
+        background-color: #FDE68A;
+    }
+
+    .side_bar .sidebar_links ul li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333333;
+        padding-left: 10px;
+    }
+
+    .side_bar .sidebar_links ul li a:hover {
+        color: #78350F;
+    }
+
+
+
+    .side_bar .sidebar_links ul li a span {
+        font-size: 20px;
+    }
+
+    
+    .side_bar .sidebar_links .link-text {
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 15px;
+    }
+
+    .side_bar .sidebar_links a #count {
+        padding-left: 10px;
+    }
+
+
+  .side_bar .sidebar_links a span {
+    font-family: 'Material Icons';
+    font-size: 20px;
+  }
