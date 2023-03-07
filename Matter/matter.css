@@ -281,22 +281,22 @@ body {
   }
 
   .matter-card-container {
-    background-color: #FFFBEB;
     margin-top: 10px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .matter-card-container .matter_cards {
     background-color: #FFFBEB;
     margin-top: 10px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 200px;
   }
+
+  .matter-card-container .matter_cards ul li {
+    
+  }
+
+
+
+
   
