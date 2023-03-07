@@ -286,10 +286,10 @@ body {
     width: 100%;
   }
 
-  .matter-card-container .matter_cards {
+  .matter_cards {
     background-color: #FFFBEB;
-    margin: 20px 5px 0 5px;
-    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .matter-card-container .matter_cards ul {
