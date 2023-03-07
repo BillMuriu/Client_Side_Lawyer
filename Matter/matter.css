@@ -300,7 +300,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-/* 
   .matter-card-container .matter_cards ul li {
     display: flex;
     align-items: center;
@@ -310,7 +309,7 @@ body {
     background-color: #111827;
   }
 
-  .matter-card-container .matter_cards ul li .matter_tag {
+  /* .matter-card-container .matter_cards ul li .matter_tag {
     color: #111827;
   }
 
