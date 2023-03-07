@@ -164,6 +164,7 @@ body {
     color: aqua;
     margin: 10px;
     height: 200vh;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     overflow: auto; /* add this line to allow scrolling by default */
     transition: filter 0.3s ease-in-out;
     display: flex;
@@ -187,10 +188,11 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   .add_matter {
-    margin-top: 30px;
+    margin-top: 12px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -202,7 +204,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25px;
+    height: 30px;
     background-color: #111827;
     color: #ffffff;
     border-radius: 5px;
@@ -214,3 +216,32 @@ body {
     font-size: 20px;
     padding-right: 5px;
  }
+
+ .add-matter-button .button-text-matter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+ }
+
+ .content .search {
+    margin-top: 12px;
+ }
+
+ .content .search  .search_title {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search_title input[type="text"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+  }
+  
