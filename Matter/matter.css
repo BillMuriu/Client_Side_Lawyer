@@ -298,15 +298,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .matter-card-container .matter_cards ul li {
-    display: flex;
+    /* display: flex;
     align-items: center;
     width: 100%;
     justify-content: flex-start;
     padding: 5px;
-    background-color: #111827;
+    background-color: #111827; */
   }
 
   /* .matter-card-container .matter_cards ul li .matter_tag {
