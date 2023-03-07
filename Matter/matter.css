@@ -164,7 +164,7 @@ body {
     color: aqua;
     margin: 10px;
     height: 200vh;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     overflow: auto; /* add this line to allow scrolling by default */
     transition: filter 0.3s ease-in-out;
     display: flex;
@@ -188,7 +188,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .add_matter {
@@ -281,8 +281,7 @@ body {
   }
 
   .matter-card-container {
-    background-color: #111827;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100%;
   }
 
@@ -290,30 +289,33 @@ body {
     background-color: #FFFBEB;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 5px;
+    padding-top: 8px;
+    box-shadow: 2px 2px 4px rgba(0.1, 0.1, 0.1, 0.1);
   }
 
   .matter-card-container .matter_cards ul {
-    width: 100%;
+    width: 87%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .matter-card-container .matter_cards ul li {
-    /* display: flex;
+    display: flex;
     align-items: center;
     width: 100%;
     justify-content: flex-start;
     padding: 5px;
-    background-color: #111827; */
+    padding-left: 0px;
   }
 
-  /* .matter-card-container .matter_cards ul li .matter_tag {
+ .matter-card-container .matter_cards ul li .matter_tag {
     color: #111827;
   }
 
   .matter-card-container .matter_cards ul li .matter_tag_details {
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 15px;
     color: #111827;
   }
@@ -331,11 +333,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 10px;
     height: 30px;
     background-color: #78350F;
     color: #ffffff;
     border-radius: 5px;
-  } */
+  }
 
 
 
