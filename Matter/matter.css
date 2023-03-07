@@ -187,19 +187,30 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    border: 1px solid rgba(120, 53, 15, 0.5); /* set the border color to a faded version of #78350F */
   }
 
   .add_matter {
     margin-top: 30px;
     width: 100%;
-    background-color: #111827;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
   
   
+  .add-matter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    background-color: #111827;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
   
-  
-
+ .add-matter-button span {
+    font-family: 'Material Icons';
+    font-size: 20px;
+    padding-right: 5px;
+ }
