@@ -67,22 +67,6 @@ body {
     z-index: 1;
   }
 
-  .content {
-    flex: 1;
-    background-color: #ffffff;
-    color: aqua;
-    margin: 10px;
-    height: 200vh;
-    overflow: auto; /* add this line to allow scrolling by default */
-    transition: filter 0.3s ease-in-out;
-  }
-  
-
-  .content.blur {
-    filter: blur(2px); /* add this to apply a blur effect */
-    overflow: hidden; /* add this to prevent scrolling */
-  }
-
   .side_bar .profile {
     display: flex;
     align-items: center;
@@ -173,3 +157,22 @@ body {
     font-family: 'Material Icons';
     font-size: 20px;
   }
+
+  .content {
+    flex: 1;
+    background-color: #ffffff;
+    color: aqua;
+    margin: 10px;
+    height: 200vh;
+    overflow: auto; /* add this line to allow scrolling by default */
+    transition: filter 0.3s ease-in-out;
+    display: flex; /* add this line to enable flexbox */
+    justify-content: center; /* add this line to center the title horizontally */
+    align-items: center; /* add this line to center the title vertically */
+  }
+  
+  .content__title {
+    font-size: 3em; /* add this line to adjust the font size */
+    text-align: center; /* add this line to center the title text */
+  }
+  
