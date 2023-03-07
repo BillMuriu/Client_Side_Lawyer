@@ -167,8 +167,8 @@ body {
     overflow: auto; /* add this line to allow scrolling by default */
     transition: filter 0.3s ease-in-out;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
   }
   
   .content.blur {
@@ -189,8 +189,17 @@ body {
     border-radius: 5px;
     border: 1px solid rgba(120, 53, 15, 0.5); /* set the border color to a faded version of #78350F */
   }
-  
-  
 
+  .add_matter {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  
+  
   
 
