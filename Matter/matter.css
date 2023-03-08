@@ -343,13 +343,31 @@ body {
 
   @media screen and (min-width: 576px) {
     .content .search {
+        width: 90%;
         margin-top: 12px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-    
      }
+
+     .content .search  .search_title {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: 1.2px solid #b2b5ba;
+        max-width: 150px;
+        margin-right: 5px;
+      }
+
+      .search_matter_type {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 1px solid #b2b5ba;
+      }
   }
 
 
