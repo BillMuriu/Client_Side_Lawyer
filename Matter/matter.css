@@ -182,7 +182,7 @@ body {
     color: #333333;
     width: 5rem;
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -340,6 +340,17 @@ body {
     border-radius: 5px;
   }
 
+
+  @media screen and (min-width: 576px) {
+    .content .search {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+     }
+  }
 
 
   
