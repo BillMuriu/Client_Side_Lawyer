@@ -1,109 +1,175 @@
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+    background-color: #FFFBEB;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+    overflow: auto;
+}
 
-.container {
-  position: relative;
-  max-width: 700px;
-  width: 100%;
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-.container header {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: 500;
-  text-align: center;
-}
-.container .form {
-  margin-top: 30px;
-}
-.form .input-box {
-  width: 100%;
-  margin-top: 20px;
-}
-.input-box label {
-  color: #333;
-}
-.form :where(.input-box input, .select-box) {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  outline: none;
-  font-size: 1rem;
-  color: #707070;
-  margin-top: 8px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0 15px;
-}
-.input-box input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.form .column {
-  display: flex;
-  column-gap: 15px;
-}
-.form .gender-box {
-  margin-top: 20px;
-}
-.gender-box h3 {
-  color: #333;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-.form :where(.gender-option, .gender) {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  flex-wrap: wrap;
-}
-.form .gender {
-  column-gap: 5px;
-}
-.gender input {
-  accent-color: rgb(130, 106, 251);
-}
-.form :where(.gender input, .gender label) {
-  cursor: pointer;
-}
-.gender label {
-  color: #707070;
-}
-.address :where(input, .select-box) {
-  margin-top: 15px;
-}
-.select-box select {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  border: none;
-  color: #707070;
-  font-size: 1rem;
-}
-.form button {
-  height: 55px;
-  width: 100%;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 30px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
-}
-.form button:hover {
-  background: rgb(88, 56, 250);
-}
-/*Responsive*/
-@media screen and (max-width: 500px) {
-  .form .column {
-    flex-wrap: wrap;
+.top_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111827;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1
   }
-  .form :where(.gender-option, .gender) {
-    row-gap: 15px;
+  
+
+  .sidebar_trigger {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: -12px;
+    height: 50px;
+    width: 50px;
   }
-}
+
+  .sidebar_trigger span {
+    font-family: 'Material Icons';
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    transition: transform 1s ease-in-out;
+  }
+
+  #menu_closed {
+    display: none;
+  }
+
+
+  .bottom_section {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .side_bar {
+    background-color: #FFFBEB;
+    height: calc(100vh - 50px);
+    width: 200px;
+    position: fixed;
+    top: 50px;
+    left: -200px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .content {
+    flex: 1;
+    background-color: #ffffff;
+    color: aqua;
+    margin: 10px;
+    height: 200vh;
+    overflow: auto; /* add this line to allow scrolling by default */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+
+  .content.blur {
+    filter: blur(2px); /* add this to apply a blur effect */
+    overflow: hidden; /* add this to prevent scrolling */
+  }
+
+  .side_bar .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBEB;
+    height: 75px;
+    border-bottom: 1px solid #78350F;
+
+  }
+
+  
+  .side_bar .profile_image img {
+    background-color: #333333;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .side_bar .profile_name {
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+  }
+
+
+
+    .side_bar .sidebar_links ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    .side_bar .sidebar_links ul li {
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .sidebar_links ul li:last-child {
+        margin-top: auto;
+    }
+
+    .side_bar .sidebar_links ul li:hover{
+        background-color: #FDE68A;
+    }
+
+    .side_bar .sidebar_links ul li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333333;
+        padding-left: 10px;
+    }
+
+    .side_bar .sidebar_links ul li a:hover {
+        color: #78350F;
+    }
+
+
+
+    .side_bar .sidebar_links ul li a span {
+        font-size: 20px;
+    }
+
+    
+    .side_bar .sidebar_links .link-text {
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 15px;
+    }
+
+    .side_bar .sidebar_links a #count {
+        padding-left: 10px;
+    }
+
+
+  .side_bar .sidebar_links a span {
+    font-family: 'Material Icons';
+    font-size: 20px;
+  }
