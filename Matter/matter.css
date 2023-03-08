@@ -291,7 +291,7 @@ body {
     margin-right: 10px;
     border-radius: 5px;
     padding-top: 8px;
-    box-shadow: 2px 2px 4px rgba(0.1, 0.1, 0.1, 0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   .matter-card-container .matter_cards ul {
