@@ -173,3 +173,9 @@ body {
     font-family: 'Material Icons';
     font-size: 20px;
   }
+
+  .content .matter_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
