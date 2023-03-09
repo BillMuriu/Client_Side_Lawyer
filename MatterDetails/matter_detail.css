@@ -178,4 +178,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #FFFBEB;
+    margin: 10px;
+  }
+
+  .content .matter_details .matter_title {
+    background-color: #78350F;
+    color: #FFFBEB;
+  }
+
+  .content .matter_details ul {
+    width: 80%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: flex-start;
+  }
+
+  .content .matter_details ul li {
+    background-color: #111827;
+    width: 100%;
   }
