@@ -180,12 +180,15 @@ body {
     align-items: center;
     background-color: #FFFBEB;
     margin: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .content .matter_details .matter_title {
     background-color: #78350F;
     color: #FFFBEB;
+    border-radius: 5px;
+    min-width: 200px;
   }
 
   .content .matter_details ul {
@@ -232,10 +235,19 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
 
-  .content .other_documents .the_link {
+  .content .other_documents a .the_link {
     padding: 8px;
     color: #111827;
   }
+
+  .content .other_documents a:hover {
+    background-color: #FCD34D;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    .content .other_documents a:hover .the_link {
+    color: #F9FAFB;
+    }
 
   @media screen and (max-width: 500px) {
     .content .other_documents {
