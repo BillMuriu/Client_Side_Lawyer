@@ -189,12 +189,23 @@ body {
     color: #FFFBEB;
     border-radius: 5px;
     min-width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content .matter_details .matter_title h3 {
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .content .matter_details ul {
     width: 80%;
     background-color: #333333;
     display: flex;
+    padding-top: 12px;
     flex-direction: column;
     align-items : center;
     justify-content: flex-start;
