@@ -226,12 +226,15 @@ body {
   }
 
   .content .other_documents a {
-    background-color: #78350F;
+    background-color: #FFFBEB;
+    text-decoration: none;
     border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
 
   .content .other_documents .the_link {
     padding: 8px;
+    color: #111827;
   }
 
   @media screen and (max-width: 500px) {
