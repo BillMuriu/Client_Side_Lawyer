@@ -219,11 +219,19 @@ body {
 
   .content .other_documents {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     column-gap: 15px;
   }
 
   .content .other_documents a {
     background-color: #78350F;
+    border-radius: 5px;
+  }
+
+  .content .other_documents .the_link {
+    padding: 8px;
   }
 
   @media screen and (max-width: 500px) {
