@@ -199,4 +199,10 @@ body {
   .content .matter_details ul li {
     background-color: #111827;
     width: 100%;
+    margin-right: 30px;
+  }
+
+  .content .matter_details ul .matter_buttons {
+    display: flex;
+    justify-content: space-between;
   }
