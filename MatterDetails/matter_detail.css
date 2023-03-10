@@ -70,7 +70,6 @@ body {
   .content {
     flex: 1;
     background-color: #ffffff;
-    color: aqua;
     margin: 10px;
     height: 100%;
     overflow: auto; /* add this line to allow scrolling by default */
@@ -179,9 +178,18 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #FFFBEB;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .content .matter_details .the_dets_and_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .content .matter_details .matter_title {
@@ -202,7 +210,7 @@ body {
   }
 
   .content .matter_details ul {
-    width: 80%;
+    width: 70%;
     /* background-color: #333333; */
     display: flex;
     padding-top: 12px;
@@ -251,8 +259,9 @@ body {
 
   .content .other_documents {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 10px;
     column-gap: 15px;
   }
@@ -303,9 +312,13 @@ body {
     color: #F9FAFB;
     }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .content .other_documents {
+    
       flex-wrap: wrap;
       row-gap: 15px;
+    }
+    .content .matter_details {
+        margin: 10px
     }
   }
