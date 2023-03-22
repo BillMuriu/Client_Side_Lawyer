@@ -180,12 +180,18 @@ body {
     font-size: 20px;
   }
 
+  .content {
+    background-color: #FFFBEB;
+  }
   .create_container {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .container {
@@ -194,12 +200,12 @@ body {
     background: #FFFBEB;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
   .container header {
     font-size: 1.5rem;

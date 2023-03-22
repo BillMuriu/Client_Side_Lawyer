@@ -173,6 +173,11 @@ body {
     font-size: 20px;
   }
 
+  .content {
+    margin: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
   .content .matter_details {
     display: flex;
     flex-direction: column;
@@ -183,7 +188,7 @@ body {
     margin-right: 200px;
     margin-left: 200px;
     border-radius: 5px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .content .matter_details .the_dets_and_links {
