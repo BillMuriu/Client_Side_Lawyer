@@ -188,7 +188,7 @@ body {
     margin-right: 200px;
     margin-left: 200px;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   .content .matter_details .the_dets_and_links {
